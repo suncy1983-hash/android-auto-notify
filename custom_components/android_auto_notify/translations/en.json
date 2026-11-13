@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Android Auto notifications",
+        "description": "Choose the phone whose Home Assistant notifications should all show on Android Auto too.",
+        "data": {
+          "webhook_id": "Phone",
+          "exclude": "Excluded words"
+        },
+        "data_description": {
+          "exclude": "Comma separated. A notification whose title or message contains one of them is not shown in the car (it still reaches the phone). Leave empty to show every notification."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This phone is already set up.",
+      "no_phones": "No phone is connected with the Home Assistant Companion app."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Android Auto notifications",
+        "data": {
+          "exclude": "Excluded words"
+        },
+        "data_description": {
+          "exclude": "Comma separated. Notifications containing one of these words are not shown in the car."
+        }
+      }
+    }
+  }
+}

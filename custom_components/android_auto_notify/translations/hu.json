@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Android Auto értesítések",
+        "description": "Válaszd ki a telefont, amelynek minden Home Assistant értesítése Android Autón is megjelenjen.",
+        "data": {
+          "webhook_id": "Telefon",
+          "exclude": "Kizárt szavak"
+        },
+        "data_description": {
+          "exclude": "Vesszővel elválasztva. Ha egy értesítés címe vagy szövege tartalmazza valamelyiket, nem jelenik meg az autóban (a telefonon igen). Üresen hagyva minden értesítés megjelenik."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Ez a telefon már be van állítva.",
+      "no_phones": "Nincs Home Assistant Companion apppal csatlakoztatott telefon."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Android Auto értesítések",
+        "data": {
+          "exclude": "Kizárt szavak"
+        },
+        "data_description": {
+          "exclude": "Vesszővel elválasztva. Az ilyen szót tartalmazó értesítések nem jelennek meg az autóban."
+        }
+      }
+    }
+  }
+}
